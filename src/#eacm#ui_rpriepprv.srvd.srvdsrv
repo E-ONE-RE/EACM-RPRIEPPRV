@@ -1,0 +1,5 @@
+@EndUserText.label: 'RPRIEPPRV Service Definition'
+define service /EACM/UI_RPRIEPPRV {
+  expose /EACM/C_RPRIEPPRV     as CommissionSummary;
+  expose /EACM/R_RPRIEPPRV_PDF as PdfDownload;
+}

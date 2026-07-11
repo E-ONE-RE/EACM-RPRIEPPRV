@@ -1,0 +1,6 @@
+projection;
+strict ( 2 );
+
+define behavior for /EACM/C_RPRIEPPRV alias CommissionSummary
+{
+}

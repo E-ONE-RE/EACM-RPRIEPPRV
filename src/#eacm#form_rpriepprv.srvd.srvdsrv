@@ -1,0 +1,12 @@
+@EndUserText.label: 'RPRIEPPRV Form Data Provider'
+@ObjectModel.leadingEntity.name: '/EACM/C_RPRIEPPRV_FORM_H'
+define service /EACM/FORM_RPRIEPPRV {
+  expose /EACM/C_RPRIEPPRV_FORM_H as Header;
+  expose /EACM/C_RPRIEPPRV_FORM_V as General;
+  expose /EACM/C_RPRIEPPRV_FORM_A as Agent;
+  expose /EACM/C_RPRIEPPRV_FORM_C as Currency;
+  expose /EACM/C_RPRIEPPRV_FORM_U as Customer;
+  expose /EACM/C_RPRIEPPRV_FORM_T as AgentTotalsByClass;
+  expose /EACM/C_RPRIEPPRV_FORM_G as GeneralTotalsByClass;
+  expose /EACM/C_RPRIEPPRV_FORM_I as Item;
+}

@@ -1,0 +1,101 @@
+@Metadata.layer: #CORE
+@UI: {
+  headerInfo: {
+    typeName: 'Riepilogo provvigione',
+    typeNamePlural: 'Riepiloghi provvigioni'
+  }
+}
+annotate entity /EACM/C_RPRIEPPRV with 
+{
+  @UI.facet: [ {
+    id: 'GeneralInfo',
+    label: 'General Information',
+    purpose: #STANDARD,
+    position: 10,
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+
+  @UI.lineItem: [
+    { position: 10, importance: #HIGH, label: 'Societa' }
+  ]
+  @UI.selectionField: [ { position: 10 } ]
+  @UI.identification: [ { position: 10 } ]
+  Bukrs;
+
+  @UI.lineItem: [ { position: 20, importance: #HIGH, label: 'Data fattura' } ]
+  @UI.selectionField: [ { position: 20 } ]
+  @UI.identification: [ { position: 20 } ]
+  Fkdat;
+
+  @UI.lineItem: [ { position: 30, importance: #HIGH, label: 'Org. commerciale' } ]
+  @UI.selectionField: [ { position: 30 } ]
+  @UI.identification: [ { position: 30 } ]
+  Vkorg;
+
+  @UI.lineItem: [ { position: 40, importance: #HIGH, label: 'Class. provv.' } ]
+  @UI.selectionField: [ { position: 40 } ]
+  @UI.identification: [ { position: 40 } ]
+  Zclpr;
+
+  @UI.lineItem: [ { position: 50, importance: #HIGH, label: 'Agente' } ]
+  @UI.selectionField: [ { position: 50 } ]
+  @UI.identification: [ { position: 50 } ]
+  Zcdaz;
+
+  @UI.lineItem: [ { position: 60, importance: #HIGH, label: 'Ragione sociale' } ]
+  @UI.identification: [ { position: 60 } ]
+  Namea;
+
+  @UI.lineItem: [ { position: 70, importance: #HIGH, label: 'Doc. commerciale' } ]
+  @UI.selectionField: [ { position: 60 } ]
+  @UI.identification: [ { position: 70 } ]
+  Vbeln;
+
+  @UI.lineItem: [ { position: 80, importance: #HIGH, label: 'Pagatore' } ]
+  @UI.selectionField: [ { position: 70 } ]
+  @UI.identification: [ { position: 80 } ]
+  Kunrg;
+
+  @UI.selectionField: [ { position: 80 } ]
+  Zutmx;
+
+  @UI.selectionField: [ { position: 90 } ]
+  Budat;
+
+  @UI.lineItem: [ { position: 90, importance: #HIGH, label: 'Importo provv.' } ]
+  @UI.identification: [ { position: 90 } ]
+  Zimco;
+
+  @UI.lineItem: [ { position: 100, importance: #HIGH, label: 'Importo maturato' } ]
+  @UI.identification: [ { position: 100 } ]
+  Zimmg;
+
+  @UI.lineItem: [ { position: 110, importance: #MEDIUM, label: 'Valuta' } ]
+  @UI.identification: [ { position: 110 } ]
+  Waerk;
+
+  @UI.lineItem: [ { position: 120, importance: #MEDIUM, label: 'Stato record' } ]
+  @UI.identification: [ { position: 120 } ]
+  Zstre;
+
+  @UI.lineItem: [ { position: 130, importance: #MEDIUM, label: 'N. fac-simile' } ]
+  @UI.identification: [ { position: 130 } ]
+  Zidfs;
+
+  @UI.lineItem: [ { position: 140, importance: #MEDIUM, label: 'Comp. fac-simile' } ]
+  @UI.identification: [ { position: 140 } ]
+  Zamcf;
+
+  @UI.lineItem: [ { position: 150, importance: #MEDIUM, label: 'Tipo blocco' } ]
+  @UI.identification: [ { position: 150 } ]
+  Ztpcd;
+
+  @UI.identification: [ { position: 160 } ]
+  Zwaersp;
+
+  @UI.identification: [ { position: 170 } ]
+  Zkurrfp;
+
+  @UI.identification: [ { position: 180 } ]
+  Zpercsosp;
+}
